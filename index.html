@@ -332,7 +332,11 @@
   <script>
     // Check compatibility for the browser we're running this in
     if ("serviceWorker" in navigator) {
-      if (navigator.serviceWorker.controller) {
+      if (window.location.pathname !== "/") {
+        console.log(
+          "[PWA] Service Worker disabled for subdirectory"
+        );
+      } else if (navigator.serviceWorker.controller) {
         console.log(
           "[PWA] Service Worker already found, skipping register"
         );
