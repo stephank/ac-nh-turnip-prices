@@ -536,13 +536,26 @@ input[type=number] {
 }
 
 .chart-wrapper {
-  margin-top: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  height: 400px;
-  width: 100%;
+  width: 95%;
   max-width: 1080px;
   justify-content: center;
+}
+
+#chart-legend {
+  margin: 8px 0 24px 0;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.chart-legend-item {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.chart-legend-sample {
+  border: 1px solid black;
+  padding: 0.3em 0.5em;
+  margin-right: 0.5em;
 }
 
 .waves {
